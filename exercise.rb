@@ -175,3 +175,19 @@ countries.each do | country, value |
   end
 end
 puts islands
+
+######## exercise8 #########
+
+expenses1 = [2100, 410, 150, 1000, 500]
+expenses2 = [1, 2, 3, 4, 5]
+
+def calc_sum(x)
+  sum = 0
+  x.each do |expense|
+    sum += expense
+  end
+  puts sum
+end
+
+calc_sum(expenses1)
+calc_sum(expenses2)
