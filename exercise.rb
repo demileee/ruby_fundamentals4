@@ -29,14 +29,16 @@ people = {
   patty: 19
 }
 
-#exercise1
+######### exercise1 #########
+
 puts coinflips   #1
 puts colors[0]   #2
 puts ages.sort   #3
 ages << 0        #4
 puts movies[:up] #5
 
-#exercise2
+######### exercise2 #########
+
 puts colors[-1]                        #1
 cities[:tokyo] = "5 million"           #2
 revcoin = coinflips.reverse            #3
@@ -44,3 +46,20 @@ puts cities[:tokyo]                    #4
 artists.each do |artist|               #5
   puts "I think #{artist} is great."
 end
+
+######### exercise3 #########
+#1
+puts artists[1]
+puts artists[2]
+
+#2
+movies.each do |movie, year|
+  puts "#{movie} was released in #{year}."
+end
+
+#3
+puts ages.reverse
+
+#4
+movies["Beauty and the Beast"] = [1991, 2017]
+puts movies["Beauty and the Beast"]
