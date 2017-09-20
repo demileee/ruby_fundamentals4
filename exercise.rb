@@ -63,3 +63,25 @@ puts ages.reverse
 #4
 movies["Beauty and the Beast"] = [1991, 2017]
 puts movies["Beauty and the Beast"]
+
+######### exercise 4 #########
+
+#1
+ages.each do |age|
+  if age < 24
+    puts age
+  end
+end
+
+#2
+sort_age = ages.sort.reverse
+puts sort_age[0]
+
+#3
+puts coinflips.count("heads")
+
+#4
+artists.delete("toni")
+
+#5
+cities[:toronto] = "10 million"
