@@ -191,3 +191,49 @@ end
 
 calc_sum(expenses1)
 calc_sum(expenses2)
+
+######## exercise9 #########
+
+groceries = ["carrots", "toilet paper", "apples", "salmon"]
+banana_check = []
+
+def printlist(x)
+  puts "Grocery List:"
+  x.each do |item|
+    puts "* #{item}"
+  end
+  puts "Total: #{x.count}"
+end
+
+def check_bananas(x)
+  banana_check = x.select do |item|
+    item == "banana"
+  end
+
+  if banana_check.count > 0
+    puts "You need to pick up bananas."
+  else
+    puts "You don't need to pick up bananas today."
+  end
+end
+
+groceries << "rice"
+
+printlist(groceries)
+check_bananas(groceries)
+
+groceries[1]
+
+def printlist_alpha(x)
+  puts "Grocery List Alphabetically:"
+  x.sort.each do |item|
+    puts "* #{item}"
+  end
+  puts "Total: #{x.count}"
+end
+
+printlist_alpha(groceries)
+
+groceries.delete("salmon")
+
+printlist_alpha(groceries)
