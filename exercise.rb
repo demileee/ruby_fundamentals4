@@ -136,3 +136,42 @@ countries = {
   japan: {continent: "Asia", island: false},
   ireland: {continent: "Europe", island: true}
 }
+
+######## exercise7 #########
+
+bart = []
+num = []
+triple = []
+islands = []
+
+20.times do
+  # puts "I will not skateboard in the halls"
+  bart << "I will not skateboard in the halls"
+end
+
+counter = 0
+50.times do
+  counter += 1
+  num << counter
+end
+
+sum = 0
+num.each do |x|
+  sum += x
+end
+
+count = 0
+50.times do
+  count += 1
+  3.times do
+    triple << count
+  end
+end
+
+countries.each do | country, value |
+  if value[:island] == true
+    islands << country
+  else
+  end
+end
+puts islands
