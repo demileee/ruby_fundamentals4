@@ -18,15 +18,15 @@ movies = {
 }
 
 cities = {
-  toronto: "2 million",
-  hongkong: "1 billion",
-  montreal: "1 million"
+  toronto: 2000000,
+  edmonton: 1000000,
+  montreal: 1500000
 }
 
 people = {
   bob: 20,
-  stacy: 24,
-  patty: 19
+  stacy: 50,
+  patty: 10
 }
 
 ######### exercise1 #########
@@ -64,7 +64,7 @@ puts ages.reverse
 movies["Beauty and the Beast"] = [1991, 2017]
 puts movies["Beauty and the Beast"]
 
-######### exercise 4 #########
+######### exercise4 #########
 
 #1
 ages.each do |age|
@@ -85,3 +85,35 @@ artists.delete("toni")
 
 #5
 cities[:toronto] = "10 million"
+
+######## exercise5 #########
+
+#1
+sum = 0
+cities.each do |_, pop|
+  sum += pop
+end
+puts sum
+
+#2
+people.each do |name, age|
+  if age > 30
+    puts "#{name} is old."
+  else
+    puts "#{name} is young."
+  end
+end
+
+#3
+puts colors[-1]
+puts colors[-2]
+
+#4
+ages.each do |age|
+  total = age + 1
+  puts total
+end
+
+#5
+colors << "pink"
+colors << "green"
