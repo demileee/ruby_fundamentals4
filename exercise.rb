@@ -117,3 +117,22 @@ end
 #5
 colors << "pink"
 colors << "green"
+
+######## exercise6 #########
+
+#1
+movies = {
+  1999 => ["The Matrix", "Star Wars: E1", "The Mummy"],
+  2009 => ["Avatar", "Star Trek", "District 9"],
+  2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: E9"]
+}
+
+#2
+phone = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ["*", 0, "#"]]
+
+#3
+countries = {
+  canada: {continent: "North America", island: false},
+  japan: {continent: "Asia", island: false},
+  ireland: {continent: "Europe", island: true}
+}
