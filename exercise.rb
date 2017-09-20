@@ -29,5 +29,8 @@ people = {
   patty: 19
 }
 
-puts colors
-puts cities
+puts coinflips   #1
+puts colors[0]   #2
+puts ages.sort   #3
+ages << 0        #4
+puts movies[:up] #5
