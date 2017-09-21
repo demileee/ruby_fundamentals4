@@ -32,3 +32,30 @@ puts "#{ages.reduce(:+)}"
 #5
 heads = coinflips.select {|v| v == "heads" }
 puts heads
+
+######### exercise 13 #########
+
+my_dogs = [
+  { :name => 'Ralph', :position => 5 },
+  { :name => 'Cindy', :position => 8 },
+  { :name => 'Jade', :position => 11 },
+]
+
+neighbour_dogs = [
+  { :name => 'Bob', :position => 6 },
+  { :name => 'Kathy', :position => 9 },
+  { :name => 'Steph', :position => 12 },
+]
+
+def call_absent_dogs(x)
+  absent_dogs = []
+  absent_dogs << x.select{|dog| dog[:position] > 10}
+  absent_dogs.each { |dog|
+    dog.each do | k, _v |
+      puts "Come back, #{k[:name]}!"
+    end
+  }
+end
+
+call_absent_dogs(my_dogs)
+call_absent_dogs(neighbour_dogs)
