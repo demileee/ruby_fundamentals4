@@ -91,7 +91,7 @@ cities[:toronto] = "10 million"
 #1
 sum = 0
 cities.each do |_, pop|
-  sum += pop
+  sum += pop.to_i
 end
 puts sum
 
