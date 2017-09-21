@@ -96,13 +96,26 @@ end
 puts sum
 
 #2
-people.each do |name, age|
-  if age > 30
-    puts "#{name} is old."
-  else
-    puts "#{name} is young."
-  end
+# people.each do |name, age|
+#   if age > 30
+#     puts "#{name} is old."
+#   else
+#     puts "#{name} is young."
+#   end
+# end
+
+#using select method
+old = people.select {|k,v| v>30}
+young = people.select {|k,v| v <= 30}
+
+old.each do |k, _v|
+  puts "#{k} is old."
 end
+
+young.each do |k, _v|
+  puts "#{k} is young."
+end
+
 
 #3
 puts colors[-1]
