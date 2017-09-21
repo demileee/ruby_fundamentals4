@@ -6,13 +6,13 @@ students = {
 
 students_inc = {}
 
-def display(x)
+def display(x, y)
   x.each do |cohort, size|
-    puts "#{cohort}: #{size} students"
+    puts "#{cohort}: #{size} #{y}"
   end
 end
 
-display(students)
+display(students, "students")
 
 students[:cohort4] = 43
 
@@ -48,4 +48,4 @@ staff = {
   marketing: 10
 }
 
-display(staff)
+display(staff, "staff")
