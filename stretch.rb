@@ -59,3 +59,17 @@ end
 
 call_absent_dogs(my_dogs)
 call_absent_dogs(neighbour_dogs)
+
+######### exercise 14 #########
+
+def chase_squirrel(x)
+  y = x.map { |dog| dog[:position] + 5 }
+end
+
+chase_squirrel(my_dogs)
+
+def return_dogs(x)
+  y = x.map { |dog| dog[:position] = 0}
+end
+
+return_dogs(my_dogs)
